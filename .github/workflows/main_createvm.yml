@@ -14,7 +14,7 @@ env:
  
   AZURE_FUNCTIONAPP_PACKAGE_PATH: '.'
  
-  PYTHON_VERSION: '3.12'
+  PYTHON_VERSION: '3.11'
  
 jobs:
  
@@ -113,8 +113,6 @@ jobs:
         with:
  
           app-name: 'createvm'
- 
-          slot-name: 'Production'
  
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
  
